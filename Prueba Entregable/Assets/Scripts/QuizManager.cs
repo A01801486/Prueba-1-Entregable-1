@@ -1,5 +1,7 @@
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
 public class QuizManager : MonoBehaviour
@@ -11,16 +13,32 @@ public class QuizManager : MonoBehaviour
     public int currentQuestion;
 
     public Text questionText;
-    public TimerManager timer;
-
+    public TimerManager timer; // Llmando al timer
+    public ScoreManager score; //llamado al score
+    public int NumeroDePreguntas;
+    
 
     private void Start()
     {
         GeneraPregunta();
         timer = GetComponent<TimerManager>();
+        score = GetComponent<ScoreManager>();
+        NumeroDePreguntas = QnA.Count;
+        //Debug.Log(NumeroDePreguntas);
+        {
+            
+        }
     }
 
     public void correct()
+    {
+        timer.ReiniciarTimer();
+        QnA.RemoveAt(currentQuestion);
+        score.AgregarPunto();
+        GeneraPregunta();
+    }
+
+    public void incorrect()
     {
         timer.ReiniciarTimer();
         QnA.RemoveAt(currentQuestion);

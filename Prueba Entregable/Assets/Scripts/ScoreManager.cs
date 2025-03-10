@@ -1,27 +1,31 @@
 //Aun esta en progreso no agregar hasta terminar
 
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class ScoreManager : MonoBehaviour
 {
     public int preguntasCorrectas = 0;
     public Text scoreText; 
+    public QuizManager NumeroDePrguntas;
+    public void Start()
+    {   
+        NumeroDePrguntas = GetComponent<QuizManager>();
+    }
 
-    private void Start()
+    void Update()
     {
-        ActualizarPuntaje();
+        scoreText.text = preguntasCorrectas + "/" + NumeroDePrguntas.NumeroDePreguntas ;
+
     }
 
     public void AgregarPunto()
     {
         preguntasCorrectas++;
-        ActualizarPuntaje();
     }
 
-    private void ActualizarPuntaje()
-    {
-        scoreText.text = "Puntos: " + preguntasCorrectas;
-    }
+
 }
 
