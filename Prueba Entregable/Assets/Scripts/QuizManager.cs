@@ -11,14 +11,18 @@ public class QuizManager : MonoBehaviour
     public int currentQuestion;
 
     public Text questionText;
+    public TimerManager timer;
+
 
     private void Start()
     {
         GeneraPregunta();
+        timer = GetComponent<TimerManager>();
     }
 
     public void correct()
     {
+        timer.ReiniciarTimer();
         QnA.RemoveAt(currentQuestion);
         GeneraPregunta();
     }
@@ -44,5 +48,11 @@ public class QuizManager : MonoBehaviour
         questionText.text = QnA[currentQuestion].Pregunta;
 
         EstableceRespuestas();
+    }
+
+    internal void TiempoAgotado()
+    {
+        QnA.RemoveAt(currentQuestion);
+        GeneraPregunta();
     }
 }
