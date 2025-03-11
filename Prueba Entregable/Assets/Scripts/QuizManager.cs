@@ -9,13 +9,13 @@ public class QuizManager : MonoBehaviour
     public List<PreguntaRespuesta> QnA;
     
     public GameObject[] options;
-
     public int currentQuestion;
 
     public Text questionText;
-    public TimerManager timer; // Llmando al timer
-    public ScoreManager score; //llamado al score
+    private TimerManager timer; // Llmando al timer
+    private ScoreManager score; //llamado al score
     public int NumeroDePreguntas;
+    private FeedbackManager feedbackManager;
     
 
     private void Start()
@@ -23,6 +23,7 @@ public class QuizManager : MonoBehaviour
         GeneraPregunta();
         timer = GetComponent<TimerManager>();
         score = GetComponent<ScoreManager>();
+        feedbackManager = GetComponent<FeedbackManager>();
         NumeroDePreguntas = QnA.Count;
         //Debug.Log(NumeroDePreguntas);
         {
@@ -35,6 +36,7 @@ public class QuizManager : MonoBehaviour
         timer.ReiniciarTimer();
         QnA.RemoveAt(currentQuestion);
         score.AgregarPunto();
+        feedbackManager.RegistrarRespuesta(true);
         GeneraPregunta();
     }
 
@@ -42,6 +44,7 @@ public class QuizManager : MonoBehaviour
     {
         timer.ReiniciarTimer();
         QnA.RemoveAt(currentQuestion);
+        feedbackManager.RegistrarRespuesta(false);
         GeneraPregunta();
     }
 
@@ -71,6 +74,7 @@ public class QuizManager : MonoBehaviour
     internal void TiempoAgotado()
     {
         QnA.RemoveAt(currentQuestion);
+        feedbackManager.RegistrarRespuesta(false);
         GeneraPregunta();
     }
 }
