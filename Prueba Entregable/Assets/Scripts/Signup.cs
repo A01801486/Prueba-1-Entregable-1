@@ -19,7 +19,7 @@ public class Signup : MonoBehaviour
         botonB = root.Q<Button>("Back");
         botonR = root.Q<Button>("Register");
         botonR.RegisterCallback<ClickEvent, String>(Jugar,"Login");
-        botonB.RegisterCallback<ClickEvent, String>(Jugar,"Inicio");
+        botonB.RegisterCallback<ClickEvent, String>(Jugar,"Inicio11");
     }
 
     private void Jugar(ClickEvent evt, String nombreEscena)

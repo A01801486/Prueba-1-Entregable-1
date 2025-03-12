@@ -19,7 +19,7 @@ public class JoinBoton : MonoBehaviour
         botonJ = root.Q<Button>("BotonJoin");
         botonE = root.Q<Button>("Exit");
         botonJ.RegisterCallback<ClickEvent, String>(Jugar,"MenuJ");
-        botonE.RegisterCallback<ClickEvent, String>(Jugar,"Inicio");
+        botonE.RegisterCallback<ClickEvent, String>(Jugar,"Inicio11");
     }
 
     private void Jugar(ClickEvent evt, String nombreEscena)

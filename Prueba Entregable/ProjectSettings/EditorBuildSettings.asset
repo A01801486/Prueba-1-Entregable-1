@@ -47,6 +47,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cryptocurrency/Cryptocurrency (Quizes)/Quiz 9.unity
     guid: 52f3a062b32252a449a2f0af1c46d06b
+  - enabled: 1
+    path: Assets/Scenes/Inicio11.unity
+    guid: 774c7c0ebafec554cb666be6b931ceb1
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

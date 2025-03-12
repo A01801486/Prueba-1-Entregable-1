@@ -16,7 +16,7 @@ public class Regresar : MonoBehaviour
         var root = menu.rootVisualElement;
 
         botonR = root.Q<Button>("BotonR");
-        botonR.RegisterCallback<ClickEvent, String>(Jugar,"MENU");
+        botonR.RegisterCallback<ClickEvent, String>(Jugar,"MenuJ");
     }
 
     private void Jugar(ClickEvent evt, String nombreEscena)
