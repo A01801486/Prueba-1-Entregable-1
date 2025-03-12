@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
@@ -76,5 +77,10 @@ public class QuizManager : MonoBehaviour
         QnA.RemoveAt(currentQuestion);
         feedbackManager.RegistrarRespuesta(false);
         GeneraPregunta();
+    }
+
+    public void RegresarAlMenu()
+    {
+        SceneManager.LoadScene("MenuJ"); 
     }
 }
