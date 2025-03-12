@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      terraza_0: 250525727653330642
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

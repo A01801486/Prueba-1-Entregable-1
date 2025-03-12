@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class TimerManager : MonoBehaviour
 {
-    public float tiempoLimite = 10f; // Tiempo
+    public float tiempoLimite = 10f; // Tiempo que puede ser modificable
     private float tiempoRestante;
     private bool timerActivo = false;
 

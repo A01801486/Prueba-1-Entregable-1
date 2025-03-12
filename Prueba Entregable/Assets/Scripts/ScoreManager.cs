@@ -7,7 +7,7 @@ using UnityEngine.UIElements;
 
 public class ScoreManager : MonoBehaviour
 {
-    public int preguntasCorrectas = 0;
+    public int preguntasCorrectas = 0; // numero de preguntas correctas
     public Text scoreText; 
     public QuizManager NumeroDePrguntas;
     public void Start()

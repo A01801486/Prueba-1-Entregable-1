@@ -14,7 +14,7 @@ public class QuizManager : MonoBehaviour
     public Text questionText;
     private TimerManager timer; // Llmando al timer
     private ScoreManager score; //llamado al score
-    public int NumeroDePreguntas;
+    public int NumeroDePreguntas; // Saber numero de preguntas 
     private FeedbackManager feedbackManager;
     
 

@@ -27,7 +27,7 @@ public class FeedbackManager : MonoBehaviour
         }
     }
 
-    private void MostrarFeedback(bool esCorrecto) 
+    private void MostrarFeedback(bool esCorrecto)  //Cambiar esta cosa
     {
         string mensaje;
 
