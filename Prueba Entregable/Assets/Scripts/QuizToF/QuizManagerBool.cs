@@ -81,7 +81,8 @@ public class QuizManagerBool : MonoBehaviour
     }
 
     internal void TiempoAgotado()
-    {
+    {   
+        
         QnA.RemoveAt(currentQuestion);
         feedbackManager.RegistrarRespuesta(false);
         GeneraPregunta();

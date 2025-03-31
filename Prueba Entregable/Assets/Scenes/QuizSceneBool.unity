@@ -355,7 +355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tiempoLimite: 10
   timerText: {fileID: 1767316815}
-  quizManager: {fileID: 0}
+  quizManager: {fileID: 567352547}
 --- !u!114 &567352549
 MonoBehaviour:
   m_ObjectHideFlags: 0
