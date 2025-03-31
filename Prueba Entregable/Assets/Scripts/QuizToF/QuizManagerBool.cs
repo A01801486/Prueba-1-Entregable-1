@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.SocialPlatforms.Impl;
 using UnityEngine.UI;
 
-public class QuizManager : MonoBehaviour
+public class QuizManagerBool : MonoBehaviour
 {
     public List<PreguntaRespuesta> QnA;
     
@@ -13,8 +13,8 @@ public class QuizManager : MonoBehaviour
     public int currentQuestion;
 
     public Text questionText;
-    private TimerManager timer; // Llmando al timer
-    private ScoreManager score; //llamado al score
+    private TimerManagerBool timer; // Llmando al timer
+    private ScoreManagerBool score; //llamado al score
     public int NumeroDePreguntas; // Saber numero de preguntas 
     private FeedbackManager feedbackManager;
     
@@ -22,8 +22,8 @@ public class QuizManager : MonoBehaviour
     private void Start()
     {
         GeneraPregunta();
-        timer = GetComponent<TimerManager>();
-        score = GetComponent<ScoreManager>();
+        timer = GetComponent<TimerManagerBool>();
+        score = GetComponent<ScoreManagerBool>();
         feedbackManager = GetComponent<FeedbackManager>();
         NumeroDePreguntas = QnA.Count;
         //Debug.Log(NumeroDePreguntas);
@@ -53,13 +53,13 @@ public class QuizManager : MonoBehaviour
     {
         for (int i = 0; i < options.Length; i++)
         {
-            options[i].GetComponent<AnswerScript>().isCorrect = false;
+            options[i].GetComponent<AnswerScriptBool>().isCorrect = false;
             
             options[i].transform.GetChild(0).GetComponent<Text>().text = QnA[currentQuestion].Respuestas[i];
         
             if(QnA[currentQuestion].RespuestaCorrecta == i+1)
             {
-                options[i].GetComponent<AnswerScript>().isCorrect = true;
+                options[i].GetComponent<AnswerScriptBool>().isCorrect = true;
             }
         }
     }
@@ -91,4 +91,6 @@ public class QuizManager : MonoBehaviour
     {
         SceneManager.LoadScene("MenuJ"); 
     }
+    
+
 }
