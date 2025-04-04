@@ -8,6 +8,8 @@
 }
 
 .contenedor {
+    width: initial;
+    height: initial;
 }
 
 .boton:hover {
@@ -39,4 +41,30 @@
 .boton2 {
     background-image: url("project://database/Assets/Buttons/PNG/8Button_Midl_Red.png?fileID=2800000&guid=36fe1d766c5df3343b1eb1b5d524afbd&type=3#8Button_Midl_Red");
     color: rgb(255, 255, 255);
+}
+
+.textfield {
+    margin-bottom: 70px;
+    width: 400px;
+    height: 80px;
+    -unity-text-align: middle-center;
+    font-size: 25px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-image: none;
+    flex-direction: column;
+    padding-left: 0;
+    white-space: normal;
+    text-overflow: clip;
+}
+
+.login {
+    align-self: flex-end;
+    align-items: auto;
+    top: 193px;
+    right: 231px;
+    width: auto;
+    height: auto;
 }
