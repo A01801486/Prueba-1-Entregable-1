@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 359384780}
   - component: {fileID: 359384779}
   m_Layer: 5
-  m_Name: Boton B
+  m_Name: Boton C
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -638,10 +638,15 @@ MonoBehaviour:
     - 8
     - 12
     RespuestaCorrecta: 4
+  - Pregunta: ToF
+    Respuestas:
+    - 4
+    - 6
+    RespuestaCorrecta: 2
   options:
   - {fileID: 1372318091}
-  - {fileID: 359384777}
   - {fileID: 1057049812}
+  - {fileID: 359384777}
   - {fileID: 437686534}
   currentQuestion: 0
   questionText: {fileID: 829931079}
@@ -712,6 +717,7 @@ MonoBehaviour:
   - Que mal :c
   - No hay problema :)
   - 3 Errores, Concentrate :O
+  rachaCorrecta: 0
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -1219,8 +1225,8 @@ RectTransform:
   m_Children:
   - {fileID: 2115132183}
   - {fileID: 1372318092}
-  - {fileID: 359384778}
   - {fileID: 1057049813}
+  - {fileID: 359384778}
   - {fileID: 437686535}
   - {fileID: 724706776}
   m_Father: {fileID: 1608318603}
@@ -1362,7 +1368,7 @@ GameObject:
   - component: {fileID: 1057049815}
   - component: {fileID: 1057049814}
   m_Layer: 5
-  m_Name: Boton C
+  m_Name: Boton B
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

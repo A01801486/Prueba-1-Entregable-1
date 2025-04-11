@@ -63,5 +63,7 @@ EditorBuildSettings:
     path: Assets/Scenes/QuizSceneBool.unity
     guid: f704651d78c45e64cacb257698b7771f
   m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: caded5ea41b5c184fbf373ae48d34936, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    com.unity.localization.settings: {fileID: 11400000, guid: a52e0c2dacbfa7249ab304a7656ae482, type: 2}
   m_UseUCBPForAssetBundles: 0

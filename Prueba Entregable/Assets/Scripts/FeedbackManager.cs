@@ -1,15 +1,31 @@
 // Hace falta mejorar este sistema, es solo provisional
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class FeedbackManager : MonoBehaviour
 {
-    public Text feedbackText; 
-    public string[] mensajesCorrectos; // Mensajes para respuestas correctas
-    public string[] mensajesIncorrectos; // Mensajes para respuestas incorrectas
+    public static FeedbackManager instance;
 
-    private int rachaCorrecta = 0;
+    public Text feedbackText; 
+    public string[] mensajesCorrectos;
+    public string[] mensajesIncorrectos;
+
+    public int rachaCorrecta = 0;
     private int rachaIncorrecta = 0;
+
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject); // Para evitar duplicados
+        }
+    }
 
     public void RegistrarRespuesta(bool esCorrecto)
     {
@@ -27,27 +43,27 @@ public class FeedbackManager : MonoBehaviour
         }
     }
 
-    private void MostrarFeedback(bool esCorrecto)  //Cambiar esta cosa
+    private void MostrarFeedback(bool esCorrecto)
     {
         string mensaje;
 
         if (esCorrecto)
         {
             if (rachaCorrecta >= 3)
-                mensaje = mensajesCorrectos[2]; 
+                mensaje = mensajesCorrectos[2];
             else if (rachaCorrecta == 2)
-                mensaje = mensajesCorrectos[1]; 
+                mensaje = mensajesCorrectos[1];
             else
-                mensaje = mensajesCorrectos[0]; 
+                mensaje = mensajesCorrectos[0];
         }
         else
         {
             if (rachaIncorrecta >= 3)
-                mensaje = mensajesIncorrectos[2]; 
+                mensaje = mensajesIncorrectos[2];
             else if (rachaIncorrecta == 2)
-                mensaje = mensajesIncorrectos[1]; 
+                mensaje = mensajesIncorrectos[1];
             else
-                mensaje = mensajesIncorrectos[0]; 
+                mensaje = mensajesIncorrectos[0];
         }
 
         feedbackText.text = mensaje;
@@ -56,7 +72,11 @@ public class FeedbackManager : MonoBehaviour
     }
 
     private void OcultarFeedback()
+{
+    if (feedbackText != null)
     {
         feedbackText.gameObject.SetActive(false);
     }
+}
+
 }

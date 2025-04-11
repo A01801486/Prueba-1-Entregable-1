@@ -17,18 +17,17 @@ public class TimerManager : MonoBehaviour
 
     private void Update()
     {
-        if (timerActivo)
-        {
-            tiempoRestante -= Time.deltaTime;
-            timerText.text = "Tiempo: " + Mathf.Ceil(tiempoRestante); // redondear
+        if (!timerActivo || timerText == null || quizManager == null) return;
 
-            if (tiempoRestante <= 0)
-            {
-                timerActivo = false;
-                Debug.Log("Tiempo agotado. Pasando a la siguiente pregunta.");
-                quizManager.TiempoAgotado(); 
-                ReiniciarTimer();
-            }
+        tiempoRestante -= Time.deltaTime;
+        timerText.text = "Tiempo: " + Mathf.Ceil(tiempoRestante);
+
+        if (tiempoRestante <= 0)
+        {
+            timerActivo = false;
+            Debug.Log("Tiempo agotado. Pasando a la siguiente pregunta.");
+            quizManager.TiempoAgotado();
+            ReiniciarTimer();
         }
     }
 
