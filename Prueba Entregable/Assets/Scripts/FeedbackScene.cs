@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class FeedbackScene : MonoBehaviour
@@ -29,5 +30,16 @@ public class FeedbackScene : MonoBehaviour
         {
             calificacionText.text = "0/10";
         }
+    }
+
+    public void VolverAlMenu()
+    {
+        if (ScoreManager.instance != null)
+        {
+            Destroy(ScoreManager.instance.gameObject); // Destruye el objeto que quedó con DontDestroyOnLoad
+            ScoreManager.instance = null; // Limpia la instancia para evitar referencias futuras
+        }
+
+        SceneManager.LoadScene("MenuJ"); // Cambia "MenuJ" por el nombre exacto de tu escena de menú si es diferente
     }
 }
