@@ -1,0 +1,33 @@
+<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/LevelSelector.uss?fileID=7433441132597879392&amp;guid=fcca2ab2d17bd4d40a48b604d6058ae2&amp;type=3#LevelSelector" />
+    <engine:VisualElement name="LevelSelectorContainer" class="LevelSelectorContainer" style="flex-grow: 1; flex-direction: row;">
+        <engine:VisualElement name="Izquierda" class="Izquierda" style="flex-grow: 1; background-color: rgb(255, 82, 170);">
+            <engine:VisualElement name="Logo" class="Logo" style="flex-grow: 0;" />
+            <engine:VisualElement name="DescripcionContainer" class="DescripcionContainer" style="flex-grow: 1;">
+                <engine:VisualElement name="EjeAnimContainer" class="EjeAnimContainer" style="flex-grow: 1; flex-direction: row-reverse; justify-content: space-between; align-self: stretch; height: 50px;">
+                    <engine:Button name="AnimButton" class="AnimButton" style="background-image: url(&quot;project://database/Assets/Game%20GUI%20Vol1/LazyDay/PNG/Play.png?fileID=2800000&amp;guid=fc3341b3f1dac464baa311991f5499e0&amp;type=3#Play&quot;); background-color: rgba(188, 188, 188, 0); border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+                    <engine:VisualElement name="EjeDescriptionContainer" class="EjeDescriptionContainer" style="flex-grow: 1;">
+                        <engine:Label text="Ejercicio (Nombre del ejercicio)" name="EjeTitle" class="EjeTitle" />
+                        <engine:Label text="[Insertar descripción]" name="EjeDescription" class="EjeDescription" style="color: rgb(255, 255, 255); font-size: 25px;" />
+                    </engine:VisualElement>
+                </engine:VisualElement>
+                <engine:VisualElement name="JugarContainer" class="JugarContainer" style="flex-grow: 1; justify-content: space-around; align-self: stretch; align-items: stretch; align-content: flex-start;">
+                    <engine:VisualElement name="ScenePreview" class="ScenePreview" style="flex-grow: 1; flex-direction: column; background-image: url(&quot;project://database/Assets/Imagenes/1.png?fileID=2800000&amp;guid=e664c9fddd8ca9043b57a297647ee6dd&amp;type=3#1&quot;); width: 400px; height: 0; min-width: auto; min-height: auto; align-self: center; align-content: auto;" />
+                    <engine:Button text="Jugar" name="JugarButton" class="JugarButton" style="width: 250px; height: 100px; -unity-font-style: bold; font-size: 35px; -unity-text-align: upper-center; background-position-x: center 0; background-position-y: center 0; -unity-background-scale-mode: stretch-to-fill; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" />
+                </engine:VisualElement>
+            </engine:VisualElement>
+        </engine:VisualElement>
+        <engine:VisualElement name="Derecha" class="Derecha" style="flex-grow: 1; flex-direction: row; background-color: rgb(0, 0, 0); align-self: stretch; justify-content: space-between; align-items: stretch;">
+            <engine:VisualElement name="FirstLevel" class="FirstLevel" style="flex-grow: 1; justify-content: center; align-self: center; align-items: auto; flex-shrink: 0; align-content: flex-start;">
+                <engine:Button name="LevelButton" class="LevelButton" style="background-image: url(&quot;project://database/Assets/Game%20GUI%20Vol1/Playful/PNG/Yes.png?fileID=2800000&amp;guid=3450eb53f02974cc38c1ef039141f7f4&amp;type=3#Yes&quot;); background-color: rgba(188, 188, 188, 0); width: 200px; height: 200px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; top: 50px;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="SecondLevel" class="SecondLevel" style="flex-grow: 1; justify-content: flex-start;">
+                <engine:VisualElement style="flex-grow: 0; background-image: url(&quot;project://database/Assets/Imagenes/BanderaRosa.png?fileID=2800000&amp;guid=657e2e3bea340864a9f7a953baf561e8&amp;type=3#BanderaRosa&quot;); background-size: 100% 100%; width: 200px; height: 200px; align-self: center; justify-content: flex-start;" />
+                <engine:Button name="LevelButton" class="LevelButton" style="background-image: url(&quot;project://database/Assets/Game%20GUI%20Vol1/Playful/PNG/Restart.png?fileID=2800000&amp;guid=f411799d2db434ea7a9cad5c2cbb23d1&amp;type=3#Restart&quot;); background-color: rgba(188, 188, 188, 0); width: 200px; height: 200px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; margin-top: -1px;" />
+            </engine:VisualElement>
+            <engine:VisualElement name="ThirdLevel" class="ThirdLevel" style="flex-grow: 1; justify-content: space-evenly;">
+                <engine:Button name="LevelButton" class="LevelButton" style="background-image: url(&quot;project://database/Assets/Game%20GUI%20Vol1/Playful/PNG/QuestionMark.png?fileID=2800000&amp;guid=4897c39ed1db34fcc81eca6e13612f56&amp;type=3#QuestionMark&quot;); background-color: rgba(188, 188, 188, 0); width: 200px; height: 200px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; top: 50px;" />
+            </engine:VisualElement>
+        </engine:VisualElement>
+    </engine:VisualElement>
+</engine:UXML>

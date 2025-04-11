@@ -1,0 +1,119 @@
+.Izquierda {
+    width: auto;
+    height: 100px;
+    min-width: 400px;
+    min-height: 100%;
+    max-width: 500px;
+    max-height: 100%;
+    background-color: rgb(254, 101, 195);
+}
+
+.Derecha {
+    background-color: rgb(0, 0, 0);
+}
+
+.EjeTitle {
+    width: 400px;
+    height: 50px;
+    color: rgb(250, 249, 249);
+    -unity-font-style: normal;
+    font-size: 29px;
+}
+
+.Logo {
+    width: 500px;
+    height: 200px;
+    align-self: center;
+    background-image: url("project://database/Assets/Fondos/CryptochicksLogo.png?fileID=2800000&guid=a3fbb246052f3f04b8fad81982e9c5cd&type=3#CryptochicksLogo");
+    justify-content: space-between;
+}
+
+.AnimButton {
+    width: 75px;
+    height: 75px;
+    background-image: url("project://database/Assets/Game%20GUI%20Vol1/LazyDay/PNG/Play.png?fileID=2800000&guid=fc3341b3f1dac464baa311991f5499e0&type=3#Play");
+    background-color: rgba(0, 0, 0, 0);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+}
+
+.EncabezadoLabel {
+    -unity-text-align: middle-center;
+    -unity-font-style: bold;
+    color: rgb(0, 0, 0);
+    font-size: 31px;
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+}
+
+.DescripcionContainer {
+}
+
+.EjeAnimContainer {
+    flex-direction: row;
+    align-self: stretch;
+    justify-content: space-between;
+    width: auto;
+    height: 125px;
+    min-width: 400px;
+    max-width: 500px;
+}
+
+.LevelSelectorContainer {
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.EjeDescriptionContainer {
+    height: 300px;
+    width: 75px;
+}
+
+.EjeDescription {
+    width: 400px;
+    height: 200px;
+    color: rgb(255, 255, 255);
+}
+
+.JugarContainer {
+}
+
+.JugarButton {
+    background-image: url("project://database/Assets/Buttons/PNG/10Button_Midl_Yellow.png?fileID=2800000&guid=d7b4d635d5ebc2a4c967aed03f5c932c&type=3#10Button_Midl_Yellow");
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    background-color: rgba(55, 55, 55, 0);
+    width: 250%;
+    height: 15%;
+    -unity-text-align: middle-center;
+    align-self: center;
+    overflow: hidden;
+}
+
+.ScenePreview {
+    width: 300px;
+    height: 250px;
+    min-width: auto;
+    min-height: auto;
+    align-self: center;
+}
+
+.FirstLevel {
+    width: auto;
+    height: 100%;
+}
+
+.SecondLevel {
+}
+
+.ThirdLevel {
+}
+
+.LevelButton {
+    align-self: center;
+    width: 400px;
+    height: 400px;
+}
