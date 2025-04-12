@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CryptochicksLogo_0: -3295939596817262481
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

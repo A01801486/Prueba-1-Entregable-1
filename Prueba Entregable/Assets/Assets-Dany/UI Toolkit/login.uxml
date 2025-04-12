@@ -1,9 +1,0 @@
-<engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/UI%20Toolkit/contenedorlogin.uss?fileID=7433441132597879392&amp;guid=9202820bab454554f9833c022acc172b&amp;type=3#contenedorlogin" />
-    <engine:VisualElement name="Contenedor" style="flex-grow: 1;">
-        <engine:VisualElement name="Botones" enabled="true" class="contenedor botones" style="flex-grow: 1;">
-            <engine:Button text="BACK&#10;" name="Back" class="boton boton2" />
-            <engine:Button text="REGISTER" name="Register" class="boton" />
-        </engine:VisualElement>
-    </engine:VisualElement>
-</engine:UXML>
